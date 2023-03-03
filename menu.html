@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <title>project</title>
+    <!-- https://developer.spotify.com/documentation/web-api/ -->
+    <!-- https://www.theaudiodb.com/api_guide.php -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            width: 100vw;
+            font-family: 'Tilt Neon', cursive;
+            color: #AEC670;
+            background-color: #778D45;
+            max-width: 100%;
+        }
+        header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #1A2902;
+            height: 7vw;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        .main_container {
+            height: 80%;
+            width: 90%;
+            font-size: 25px;
+            margin: 0 auto;
+            color: #1A2902;
+            display: flex;
+            align-items: top;
+            justify-content: space-between;
+           border-bottom: 2px solid #1A2902;
+        }
+        #mainimg {
+            margin-top: 20px;
+            height: 40vw;
+            margin-right: 50px;
+        }
+        .main_text {
+            margin-top: 5vw;
+        }
+        .footer {
+            margin: 2vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .social a {
+            text-align: center;
+            width: 60px;
+            height: 60px;
+            float: left;
+            background: 
+            #d4d4d4;
+            border: 1px solid 
+            #969696;
+            box-shadow: 0 2px 4px 
+            rgba(0,0,0,0.15), inset 0 0 50px 
+            rgba(0,0,0,0.1);
+            border-radius: 10px;
+            margin: 0 10px 10px 0;
+            padding: 12px;
+            color: 
+            rgb(37, 37, 37);
+        }
+        .youtube a:hover {background: 
+            #c4302b; color: 
+            #fff;}
+        .twitter a:hover {background: 
+            #00acee; color: 
+            #fff;}
+        .instagram a:hover {background: 
+            #f13d64; color: 
+            #fff;}
+        .facebook a:hover {background: 
+            #3b5998; color: 
+            #fff;}
+        .vk a:hover {background: 
+            #5d84ae; color: 
+            #fff;}
+        .telegram a:hover {background: 
+            #249bd7; color: 
+            #fff;}
+        .bottom {
+            background-color: #526130;
+            color:#121d01;
+            text-align: center;
+            font-size: 10px;
+            padding: 20px;
+            padding-top: 30px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #AEC670;
+
+        }
+        header a:hover {
+            color: #6b7a44;
+            text-shadow: 3px 3px 1px rgb(37, 37, 37);
+        }
+        .logo{
+            height: 4vw;
+        } 
+        #logo {
+            text-decoration: underline #AEC670;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <!-- #344C11 #778D45 #AEC09A #AEC670 -->
+    <header>
+        <h1 id="logo"><a href="#">LOGO<!-- <img src="./images/spotify.png" alt="LOGO" class="logo"> --></a></h1>
+        <h2><a href="lyrics.html">lyrics</a></h2>
+        <h2><a href="music.html">music</a></h2>
+        <h2><a href="foryou.html">for you</a></h2>
+        <h2><a href="info.html">info</a></h2>
+        <h2><a href="login.html">log in</a></h2>
+    </header>
+
+    <div class="main_container">
+        
+            <img src="./images/mainpic1.png" alt="musicman" id="mainimg">
+        
+        <div class="main_text">
+            <h1>Welcome to our website!</h1>
+            <p>The website is made using the ### API, 
+                you can find your favorite music, 
+                lyrics for music and much more on it, we hope you enjoy it. </p>
+            <p>To navigate the site,
+                use the pointers in the header. On "for you" you can find something that will cheer you up!</p>
+            <p>You can contact us and check out our social networks below.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="social youtube">
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+        </div>
+        
+        <div class="social twitter">
+            <a href="https://twitter.com/?lang=ru" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+        </div>
+
+        <div class="social instagram">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+        </div>
+
+        <div class="social facebook">
+            <a href="https://ru-ru.facebook.com/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>    
+        </div>
+        
+        <div class="social vk">
+            <a href="https://vk.com/" target="_blank"><i class="fa fa-vk fa-2x"></i></a>    
+        </div>
+        
+        <div class="social telegram">
+            <a href="https://web.telegram.org/k/" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a>
+        </div>
+    </div>
+    <div class="bottom">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A veritatis voluptates voluptate ipsum blanditiis incidunt ipsa possimus, iure eum cum. Delectus quia doloremque est minima a aperiam quam incidunt iste.
+        Modi rerum enim corporis, esse, sapiente eveniet consequatur debitis asperiores nesciunt nemo possimus optio quasi necessitatibus! Dolorem, numquam accusantium eos rerum accusamus ad blanditiis facere repellendus illum facilis unde earum.
+        Quaerat accusantium adipisci commodi dolores aliquid voluptas, quisquam consequatur distinctio expedita veritatis iure corporis culpa reiciendis nisi beatae atque deserunt quas sed labore rerum ad? Nesciunt dicta aperiam dolor omnis?
+        <br>
+        IT School "ШАГ" Barkun E.
+        <br>
+        2023            
+    </div>
+
+
+</body>
+</html>
